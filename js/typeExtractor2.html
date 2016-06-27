@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<script>
+		function typeExtractor(a){
+			var num = [];
+			var stri = [];
+			var obj = [];
+			var bool =[];
+			for (i = 0; i < a.length; i++) {
+				
+				c = typeof(a[i]);	
+					
+				if (c == "number") {
+					d = num.push(a[i]);
+				} 
+				else if (c == "string"){
+					e = stri.push(a[i]);
+				}
+				else if (c == "object"){
+					f = obj.push(a[i]);
+				}
+				else if (c == "boolean") {
+					g = bool.push(a[i])
+				}
+				else {
+				}
+			}
+			console.log(num);
+			console.log(stri);
+			var result = {
+				num,
+				stri,
+				bool,
+				obj,
+			}
+			console.log(result);
+		}
+
+		typeExtractor(["hola",3,[1,2,3],true])
+
+</script>
+	
+</body>
+</html>

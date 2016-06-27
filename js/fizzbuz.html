@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<script>
+
+	//var i = parseInt(prompt("ingrese una número"));
+
+	
+
+		
+		function fizzbuzz(i) {
+
+			var a = i % 3;
+
+			var b = i % 5;
+	
+			if ( a == 0 && b == 0) {
+				return "fizzbuzz";
+			} 
+			else if (a == 0) {
+				return "fizz";
+			}
+			else if (b == 0) {
+				return "buzz";
+			}
+			else {
+				return i;
+			}
+		}
+
+
+	document.write(fizzbuzz(5));
+
+	</script>
+
+</body>
+</html>
