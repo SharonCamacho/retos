@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Mis Finanzas</title>
+</head>
+<body>
+    <!--navegador-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">misFinanzas</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><span class="glyphicon glyphicon-dashboard" style="color:gray"></span> Resumen</a></li>
+            <li class="active">
+                <a href="#"><span class="glyphicon glyphicon-list-alt" style="color:white"></span> Transacciones <span class="sr-only">(current)</span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Salir</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Contenido-->
+    <div class="container-fluid">
+      <div class="row">
+        <!--Menú de la izquierda-->
+        <div class="col-md-3 col-xs-3">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+                  <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
+          <ul class="list-group ingas">
+            <li class="list-group-item">Ingresos</li>
+            <li class="list-group-item">Gastos</li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item">Restaurantes</li>
+            <li class="list-group-item">Hogar</li>
+            <li class="list-group-item">Diversión</li>
+            <li class="list-group-item">Viajes</li>
+            <li class="list-group-item">Carro</li>
+          </ul>
+        </div>
+        <!--Parte de la derecha-->
+        <div class="col-md-9 col-xs-9">
+          <a class="btn btn-primary btn-default" href="#" role="button">+ Nueva Transacción</a>
+          <div class="dropdown fecha">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Agosto 2014<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <hr class="first">
+          <!--informe de transacciones-->
+          <div class="row nuevatrans">
+            <div class="col-md-1 col-xs-1 transaccion">
+              <p>Ago<br><span class="dia">26<span></p>
+            </div>
+            <div class="col-md-8 col-xs-8 item">
+              <p>Gasto <span class="label label-info"><strong>Hogar</strong></span><br><span class="concepto">Arriendo</span></p>
+            </div>
+            <div class="col-md-3 col-xs-3 valor">
+              <p><strong>$ 900,000</strong><br><span class="cambio">
+              <span class="glyphicon glyphicon-edit"></span> Editar
+              <span class="glyphicon glyphicon-trash"></span> Eliminar</span></p>
+            </div>
+          </div>
+          <hr>
+          <div class="row nuevatrans">
+            <div class="col-md-1 col-xs-1 transaccion">
+              <p>Ago<br><span class="dia">25<span></p>
+            </div>
+            <div class="col-md-8 col-xs-8 item">
+              <p>Gasto <span class="label label-info"><strong>Restaurante</strong></span><br><span class="concepto">El Rincón de mi tierra</span></p>
+            </div>
+            <div class="col-md-3 col-xs-3 valor">
+              <p><strong>$ 120,000</strong><br><span class="cambio">
+              <span class="glyphicon glyphicon-edit"></span> Editar
+              <span class="glyphicon glyphicon-trash"></span> Eliminar</span></p>
+            </div>
+          </div>
+          <hr>
+          <div class="row nuevatrans">
+            <div class="col-md-1 col-xs-1 transaccion">
+              <p>Ago<br><span class="dia">24<span></p>
+            </div>
+            <div class="col-md-8 col-xs-8 item">
+              <p>Ingreso<br><span class="concepto">Salario</span></p>
+            </div>
+            <div class="col-md-3 col-xs-3 valor">
+              <p><strong>$ 4'500,000</strong><br><span class="cambio">
+              <span class="glyphicon glyphicon-edit"></span> Editar
+              <span class="glyphicon glyphicon-trash"></span> Eliminar</span></p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+</body>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</html>

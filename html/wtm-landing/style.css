@@ -1,0 +1,196 @@
+*{
+	color:#001C2A;
+	font-family: 'Hind', sans-serif;
+	text-align: center;
+}
+
+.wrapper {
+	width: 100%;
+	margin-right:auto;
+	margin-left: auto;
+}
+
+.header {
+	padding: 25px 0 40px 0;	
+	width: 100%;
+	position: fixed;
+	background: white;
+	z-index: 1;
+}
+
+.navegador {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.navegador p {
+	padding: 7px 15px;
+	font-size: 14px;
+	font-family: 'Hind', sans-serif;
+	margin:0;
+	text-align: center;
+}
+
+a:link {
+  text-decoration: none ;
+  color: black;
+}
+
+a:hover { 
+  color: #001C2A ;
+  text-decoration: underline;
+}
+
+a:visited { 
+  color: #001C2A ;
+  text-decoration: underline;
+}
+
+.drop:hover .menu{
+	display: block;
+}
+
+.menu {
+	min-width: 0;
+	margin-left: 25px;
+}
+
+.botonbandera {
+	border-color: white;
+}
+
+.botonbandera:hover {
+	border-color: white;
+	background:white;
+	border-color: white;
+}
+
+.botonbandera:visited {
+	border-color: white;
+	background:white;
+	border-color: white;
+}
+
+.btn .caret {
+	margin-left: auto;
+}
+
+.flecha {
+	display: -webkit-box;
+	margin-right: auto;
+	margin-top: 4px;
+}
+
+.boot {
+  border: solid 1px #001C2A;
+  border-width: 0 1px 0 0;
+  padding: 7px 15px;
+}
+
+.emp {
+	padding: 7px 15px;
+}
+
+.testi{
+	border: solid 1px #001C2A;
+  border-width: 0 1px 0 0;
+  padding: 7px 15px;
+}
+
+.makers {
+	border: solid 1px #001C2A;
+  border-width: 0 1px 0 0;
+  padding: 7px 15px;
+}
+
+.blog {
+	padding: 7px 15px;
+}
+
+.segunda {
+	/*background: url('fondo.png');*/
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(fondo.png);
+	background-size:cover;
+	background-attachment: fixed;
+	
+}
+
+.segunda .texto {
+	margin-left: 200px;
+	margin-right: 45px;
+	padding-top: 150px;
+	padding-bottom: 60px;
+	color:white;
+}
+.segunda .texto p {
+	color: white;
+	font-size: 1.4em;
+	padding: 0;
+	text-align: left;
+}
+
+.segunda .texto h1 {
+	font-size: 4.5em;
+	font-weight: 700;
+	line-height: 1em;
+	text-transform: uppercase;
+	color: white;
+	padding: 0;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.botones {
+	text-align: center;
+	margin-top: -18px;
+}
+
+.botones a {
+	margin: 15px;
+}
+
+.botones a .btn {
+	padding: 16px;
+	font-size: 17px;
+}
+
+.botones a .btn-default {
+	color:#1F1F1F;
+}
+
+.tercera {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 28px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.cuarta .box {
+	display: inline-block;
+	text-align: center;
+	margin: 5px;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 36px;
+	padding: 24px 12px 24px 12px;
+	line-height: 1.8;
+	border: 1px solid #eee;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cuarta .azul {
+	background: #001C2A;
+	border-color: #001C2A;
+	background-image: url('logo.png');
+	background-repeat: no-repeat;
+	background-position: 95% 95%;
+	color: white;
+}
+
+.cuarta .azul p {
+	color: white;
+}

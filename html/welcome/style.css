@@ -1,0 +1,52 @@
+/***********************************
+El color de fondo es #edeff0.
+La fuente para el body debe ser Helvetica Neue, con un tamaño de 16px, y un alto de línea de 1.5.
+El color de la fuente para los párrafos es #b2bac2.
+El contenedor interno es blanco y el ancho es de 700px.
+El tamaño de la fuente en el título es 28px y el color #384047.
+El color del botón verde es #5fcf80 con un borde de color #3ac162.
+El color del botón azul es #3f8abf con un borde de color #326e99.
+#b2bac2
+************************************/
+body {
+	background: #edeff0;
+	line-height: 1.5 ;
+}
+
+.caja {
+	background: white;
+
+}
+.wrapper {
+	margin-top: 5px;
+	width: 700px;
+	padding: 0;
+}
+
+.caja p {
+	color:#b2bac2;
+	font-color:#b2bac2;
+	font-size: 16px;
+
+}
+
+.caja h1 {
+	color:#384047;
+	font-size:28px;
+}
+
+.caja h2 {
+	color:#384047;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.verde{
+	background: #5fcf80;
+	border-color: #3ac162;
+}
+
+.azul{
+	background: #3f8abf;
+	border-color: #326e99;
+}

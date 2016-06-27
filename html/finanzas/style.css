@@ -1,0 +1,53 @@
+.ingas {
+	margin-top: 20px;
+}
+
+.nuevatrans {
+	padding-top: 15px;
+}
+
+hr {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.first {
+	margin-top: 20px;
+}
+
+.fecha {
+	display: inline-block; 
+	float: right;
+}
+
+.transaccion p {
+	color:gray;
+	font-size: 12px;
+	text-align: center;
+}
+
+.dia {
+	font-size: 22px;
+}
+
+.item p {
+	color:gray;
+	font-size: 12px;
+
+}
+
+.concepto {
+	color: #003366;
+	font-size: 17px;
+}
+
+.valor p {
+	color:#778899;
+	font-size: 16px;
+	text-align: right;
+}
+
+.cambio {
+	color:gray;
+	font-size: 13px;
+}
