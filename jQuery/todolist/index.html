@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tareas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Lista de Tareas</h1>
+
+    <input type="text" id="input" placeholder="Cual es tu tarea?">
+    <ul class="todo-list">
+    </ul>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#input').keypress(function(e){
+        if(e.which == 13) {
+        var tarea = $(this).val();
+        alert(tarea);  
+        }
+        
+      })
+    })
+  </script>
+</body>
+</html>
