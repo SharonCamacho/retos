@@ -25,22 +25,91 @@
     <div class="square"></div>
     <div class="square"></div>
     <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div><div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div><div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
   </div>
+
+  <button type="button" class="boton">Agregar Cuadro</button>
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
-      $('.square:odd').on('click', function(){
-        $(this).css('background','yellow');
-      });
+      $('.boton').on('click', function(){
+        $('.squares:last').prepend('<div class="square"></div>');  
+      })
     })
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
