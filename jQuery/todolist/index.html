@@ -19,8 +19,37 @@
     $(document).ready(function(){
       $('#input').keypress(function(e){
         if(e.which == 13) {
-        var tarea = $(this).val();
-        $('.todo-list').prepend('<li>' + tarea+ '</li>');  
+          var tarea = $(this).val();
+          $('.todo-list').prepend('<li class="tarea"><span class="check"><input type="checkbox">' + '  '+ tarea+ '</span><span class="cerrar"></span></li>');
+          $('#input').val('');
+
+          $('li').mouseover(function(){
+            $(this).css('background','#ddd');
+            $(this).children('.cerrar').text('X');
+            $('.cerrar').css('display','inline-block');
+            $('.cerrar').css('float','right');
+          })
+
+          $('li').mouseleave(function(){
+            $(this).css('background','white');
+            $('.cerrar').text('');
+          })
+
+          $('.cerrar').on('click',function(){
+            $(this).parent('li').remove();
+          }) 
+
+          //$('.check').on('click',function(){
+            //$(this).css({'color':'#C0C0C0',              'text-decoration':'line-through'});
+          //}) 
+          
+          $('.check').prop("checked", function( i, val ) {
+  return !val;
+});
+
+
+
+
         }
       })
     })
