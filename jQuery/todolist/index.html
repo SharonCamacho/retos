@@ -36,20 +36,17 @@
           })
 
           $('.cerrar').on('click',function(){
-            $(this).parent('li').remove();
-          }) 
+            $(this).parent().remove();
+          })
 
-          //$('.check').on('click',function(){
-            //$(this).css({'color':'#C0C0C0',              'text-decoration':'line-through'});
-          //}) 
-          
-          $('.check').prop("checked", function( i, val ) {
-  return !val;
-});
-
-
-
-
+          $(':checkbox').on('click',function(){
+            if ($(this).prop('checked')) {
+              $(this).parent().css({'color':'#C0C0C0','text-decoration':'line-through'});
+            }
+            else {
+              $(this).parent().css({'color':'#666','text-decoration':'none'});
+            }
+          })
         }
       })
     })
