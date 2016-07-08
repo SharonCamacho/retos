@@ -17,13 +17,21 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
+      
       $('#input').keypress(function(e){
         if(e.which == 13) {
           var tarea = $(this).val();
           $('.todo-list').prepend('<li class="tarea"><span class="check"><input type="checkbox">' + '  '+ tarea+ '</span><span class="cerrar"></span></li>');
           $('#input').val('');
 
-          $('li').mouseover(function(){
+          click();
+          mouse();
+          close();
+        }
+      })
+
+      function mouse(){
+      $('li').mouseover(function(){
             $(this).css('background','#ddd');
             $(this).children('.cerrar').text('X');
             $('.cerrar').css('display','inline-block');
@@ -33,13 +41,17 @@
           $('li').mouseleave(function(){
             $(this).css('background','white');
             $('.cerrar').text('');
-          })
+          })  
+      }
 
-          $('.cerrar').on('click',function(){
+      function close(){
+      $('.cerrar').on('click',function(){
             $(this).parent().remove();
-          })
+          })  
+      }
 
-          $(':checkbox').on('click',function(){
+      function click(){
+        $(':checkbox').on('click',function(){
             if ($(this).prop('checked')) {
               $(this).parent().css({'color':'#C0C0C0','text-decoration':'line-through'});
             }
@@ -47,9 +59,10 @@
               $(this).parent().css({'color':'#666','text-decoration':'none'});
             }
           })
-        }
-      })
+      }
+
     })
+
   </script>
 </body>
 </html>
