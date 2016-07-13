@@ -12,13 +12,18 @@
 #3. hacer la operación
 #4. Mostrar el resultado
 
-Kernel.puts("Welcome to calculator!")
+#Kernel.puts("Welcome to calculator!")
 
-Kernel.puts("What's the first number?")
-number1 = Kernel.gets.chomp
+#Kernel.puts("What's the first number?")
+#number1 = Kernel.gets.chomp
 
-Kernel.puts("What's the second number?")
-number2 = Kernel.gets.chomp
+#Kernel.puts("What's the second number?")
+#number2 = Kernel.gets.chomp
 
-Kernel.puts("What kind of operation would you like to perform? 1)add 2)substract 3)multi 4)div")
-oper=Kernel.gets.chomp
+#Kernel.puts("What kind of operation would you like to perform? 1)add 2)substract 3)multi 4)div")
+#oper=Kernel.gets.chomp
+
+varArrNombres = ["Jose","Melchor","baltazar","gaspar"]
+
+#para borrar una posición de un arreglo arreglo.delete_at(posición)
+#arr.indexOf(nombredel arreglo) para debolber la posición del arreglo
