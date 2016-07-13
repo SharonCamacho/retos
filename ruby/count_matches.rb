@@ -6,10 +6,10 @@ def count_matches
 
 	p "Escriba el conjunto de números separados por ','"
 	a=gets.chomp
-	w=a.split(",").map { |s| s.to_i }
+	a=a.split(",").map { |s| s.to_i }
 	
 	contador = 0
-	w.each do |num|
+	a.each do |num|
 		if n == num
 		contador += 1
 		end	
